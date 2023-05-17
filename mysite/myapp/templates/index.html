@@ -19,6 +19,10 @@
         <li>{{ person.name }} - {{ person.email }}</li>
         {% endfor %}
     </ul>
+    <form action="">
+        {% csrf_token %}
+        {{form}}
+    </form>
     
 </body>
 </html>
